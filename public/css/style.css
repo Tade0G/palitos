@@ -1,6 +1,7 @@
 .header{
 	background-color:#0e8818;	
-	width:100%;
+	width:100vw;
+	height:30vh;
 	display:flex;
 	justify-content:space-between;
 }
@@ -43,7 +44,8 @@
 	text-align:center;
 	color:rgb(238, 232, 232);
 	background-color: #0e8818;
-	width:100%;
+	width:100vw;
+	height:15vh;
 	margin:0px;
 	padding-top:16px;
 }
