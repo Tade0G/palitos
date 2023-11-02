@@ -13,12 +13,15 @@
 		<header>
 			
 			
+	
 			
 		</header>
 		
 		<main>
 			
-			
+		<div id="usernameDisplay"></div>
+
+		
 			
 		</main>
 		
@@ -31,3 +34,13 @@
 	</body>
 	
 </html>
+
+	<script>
+        const storedUsername = localStorage.getItem('username');
+        if (storedUsername) {
+            const usernameDisplay = document.getElementById('usernameDisplay');
+            usernameDisplay.textContent = `Bienvenido, ${storedUsername}!`;
+        }else{
+            usernameDisplay.textContent = `Bienvenido, ${"usuario"}!`;
+		}
+	</script>
