@@ -5,14 +5,24 @@
 		
 		<meta charset = "UTF-8">
 		<title> informacion </title>
+		<link href="./public/css/style.css" rel="stylesheet">
+		<link href="./public/css/normalize.css" rel="stylesheet">
 		
 	</head>
 	
 	<body>
 		
-		<header>
+		<header class="header">
 			
+			<div class="logo">
+				<img src="https://cdn.discordapp.com/attachments/924416132146925598/1169502774472491018/OIG.jpg?ex=6555a355&is=65432e55&hm=0286603bfc677ee81ab485b832c0c8739d8c19281ee87d217399dd9244b101c0&" alt="icono del grupo" class="logo__img">
+				<h2 class="logo__nombre">TECHSTICKS<h2>
+			</div>
 			
+			div class="user">
+				<div id="usernameDisplay" class="saludo"></div>
+				<button onclick="salir()" class="boton__salir">Salir</button>
+			</div>
 			
 		</header>
 		
@@ -30,6 +40,8 @@
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, neque! Alias obcaecati adipisci minus provident nisi expedita suscipit modi optio maiores recusandae veritatis, asperiores non. Totam saepe hic facere doloremque.</p>
 
 			<h3>PERO SOBRE TODO DIVIERTETE!!</h3>
+			
+			<button onclick="redirigirPagina()" >volver</button>
 						
 		</main>
 		
@@ -42,3 +54,21 @@
 	</body>
 	
 </html>
+	<script>
+		
+		function salir(){
+		window.location.href = "login.html";
+		}
+		
+		function redirigirPagina() {
+        window.location.href = "index.html";
+		}
+		
+        const storedUsername = localStorage.getItem('username');
+        if (storedUsername) {
+            const usernameDisplay = document.getElementById('usernameDisplay');
+            usernameDisplay.textContent = `Bienvenido, ${storedUsername}!`;
+        }else{
+            usernameDisplay.textContent = `Bienvenido, ${"usuario"}!`;
+		}
+	</script>

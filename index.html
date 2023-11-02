@@ -17,7 +17,10 @@
 				<h2 class="logo__nombre">TECHSTICKS<h2>
 			</div>
 			
-			<div id="usernameDisplay" class="saludo"></div>
+			<div class="user">
+				<div id="usernameDisplay" class="saludo"></div>
+				<button onclick="salir()" class="boton__salir">Salir</button>
+			</div>
 			
 		</header>
 		
@@ -38,21 +41,32 @@
 			<p class="main__texto">A nivel colectivo, la industria de la heladería también tiene un papel importante que desempeñar en la mitigación de este problema. La adopción de prácticas sostenibles, como la elección de materiales de embalaje ecológicos y la promoción de opciones reutilizables, puede reducir en gran medida la huella ambiental de esta deliciosa indulgencia.</p>
 			
 			<p class="main__texto main__texto--ultimo">En última instancia, es imperativo que tomemos medidas para abordar la contaminación causada por los palitos de helado. Al hacerlo, no solo preservaremos la belleza y la vitalidad de nuestro entorno natural, sino que también protegeremos la salud y el bienestar de las generaciones futuras. Es hora de disfrutar de nuestros helados de manera consciente y sostenible.</p>
-
+			
+			<h2>¿ Interezado ?</h2>
+			<h3>Conose nuestra propuesta</h3>
+			<button onclick="redirigirPagina()" >CONOCER</button>
+			
 		</main>
 		
 		<footer class="footer">
 			
 			<h3 class="footer__copyright">Copyright © 2022-2023 TECHSTICKS</h3>
-			<h4 class="footer__datos">datos reservados a Gomez Lucas Tadeo</h4>
+			<h6 class="footer__datos">datos reservados a Gomez Lucas Tadeo</h6>
 			
 		</footer>
 
 	</body>
 	
-</html>
-
 	<script>
+	
+		function redirigirPagina() {
+        window.location.href = "informacion.html";
+		}
+		
+		function salir(){
+		window.location.href = "login.html";
+		}
+	
         const storedUsername = localStorage.getItem('username');
         if (storedUsername) {
             const usernameDisplay = document.getElementById('usernameDisplay');
@@ -61,3 +75,5 @@
             usernameDisplay.textContent = `Bienvenido, ${"usuario"}!`;
 		}
 	</script>
+	
+</html>
