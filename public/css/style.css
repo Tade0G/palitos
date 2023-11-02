@@ -1,4 +1,53 @@
 .header{
-		background-color: #cb232c;
-		
+	background-color:#ff5050;	
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+.logo{
+	margin:15px;
+	text-align:center;
+}
+.logo__img{
+	border-radius:25%;
+	width:70%;
+	height:70%;
+}
+.logo__nombre{
+	background-color:pink;
+	margin:5px;
+	border:solid 2px black ;
+	
+}
+.main{
+	text-align:center;
+	background-color:#cf5986c2;
+	padding:10px;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+	
+}
+.main__titulo{
+	margin:0px;
+}
+.main__texto--ultimo{
+	margin-bottom:0px;
+}
+.footer{
+	text-align:center;
+	color:gray;
+	background-color: #ce1d61;
+	width:100%;
+	margin:0px;
+	padding-top:16px;
+}
+.footer__datos{
+	margin:0px;
+}
+.saludo{
+	font-size:30px;
+	display:block;
+	text-align:center;
+	margin:9%;
+	font-weight:900;
 }
