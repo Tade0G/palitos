@@ -1,0 +1,58 @@
+<! DOCTYPE html>
+<html lang="es">
+	
+	<head>
+		<meta charset = "UTF-8">
+		<title> home </title>
+		<link href="./public/css/style.css" rel="stylesheet">
+		<link href="./public/css/normalize.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		
+		<header class="header">
+			
+			<div class="logo">
+				<img src="https://cdn.discordapp.com/attachments/924416132146925598/1169502774472491018/OIG.jpg?ex=6555a355&is=65432e55&hm=0286603bfc677ee81ab485b832c0c8739d8c19281ee87d217399dd9244b101c0&" alt="icono del grupo" class="logo__img">
+				<h2 class="logo__nombre">TECHSTICKS<h2>
+			</div>
+			
+				<div id="usernameDisplay" class="saludo"></div>
+			
+		</header>
+		
+		<main class="main">
+		
+		
+		
+		</main>
+		
+		<footer class="footer">
+			
+			<h3 class="footer__copyright">Copyright © 2022-2023 TECHSTICKS</h3>
+			<h6 class="footer__datos">datos reservados a Gomez Lucas Tadeo</h6>
+			
+		</footer>
+
+	</body>
+	
+	<script>
+	
+		function redirigirPagina() {
+        window.location.href = "informacion.html";
+		}
+		
+		function salir(){
+		window.location.href = "login.html";
+		}
+	
+        const storedUsername = localStorage.getItem('username');
+        if (storedUsername) {
+            const usernameDisplay = document.getElementById('usernameDisplay');
+            usernameDisplay.textContent = `Bienvenido, ${storedUsername}!`;
+        }else{
+            usernameDisplay.textContent = `Bienvenido, ${"usuario"}!`;
+		}
+	</script>
+	
+</html>
