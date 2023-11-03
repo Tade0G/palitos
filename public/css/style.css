@@ -1,7 +1,7 @@
 .header{
 	background-color:#0e8818;	
 	width:100%;
-	height:15vh;
+	height: 150px;
 	display:flex;
 	justify-content:space-around;
 }
@@ -44,6 +44,7 @@
 
 .texto{
 	font-size: 24px;
+	margin: 0 10%;
 }
 
 .footer{
@@ -51,8 +52,7 @@
 	color:rgb(238, 232, 232);
 	background-color: #0e8818;
 	width:100%;
-	height:10vh;
-	margin:0px;
+	height:100px;
 	padding-top:16px;
 }
 
