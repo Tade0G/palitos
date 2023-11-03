@@ -59,9 +59,11 @@
 			</div>
 
 			<h3 class="main__mensaje">PERO SOBRE TODO DIVIERTETE!!</h3>
+			<div class="botones">
+				<button onclick="redirigirPagina()" class="mover" >Ver Experiencias</button>
+				<button onclick="salir()" class="salir">Salir</button>
+			</div>
 			
-			<button onclick="redirigirPagina()" class="mover" >volver</button>
-			<button onclick="salir()" class="salir">Salir</button>
 						
 		</main>
 		
@@ -82,7 +84,7 @@
 		}
 		
 		function redirigirPagina() {
-        window.location.href = "index.html";
+        window.location.href = "subida.html";
 		}
 		
         const storedUsername = localStorage.getItem('username');

@@ -229,3 +229,8 @@ h2{
 	height:170px;
 	border-radius:50%;
 }
+.botones{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
