@@ -1,5 +1,5 @@
 .header{
-	background-color:#ff5050;	
+	background-color:#0e8818;	
 	width:100%;
 	display:flex;
 	justify-content:space-between;
@@ -14,7 +14,7 @@
 	height:70%;
 }
 .logo__nombre{
-	background-color:pink;
+	background-color:rgba(192, 255, 208, 0.514);
 	margin:5px;
 	border:solid 2px black ;
 	
@@ -36,13 +36,13 @@
 }
 
 .texto{
-	background-color: rgba(204, 102, 153, 0.9) ;
+	font-size: 24px;
 }
 
 .footer{
 	text-align:center;
-	color:gray;
-	background-color: #ce1d61;
+	color:rgb(238, 232, 232);
+	background-color: #0e8818;
 	width:100%;
 	margin:0px;
 	padding-top:16px;
